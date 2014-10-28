@@ -2,6 +2,8 @@
 	@author yz
 	@date 2014/10/27
 */
+#ifndef __YZ_STACK2_HPP__
+#define __YZ_STACK2_HPP__
 
 #include <stdexcept>
 
@@ -72,3 +74,5 @@ namespace yz
 		return elems[numElems - 1];
 	} 
 }
+
+#endif /* __YZ_STACK2_HPP__ */

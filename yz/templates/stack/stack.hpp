@@ -2,6 +2,9 @@
 	@author yz
 	@date 2014/10/27
 */
+#ifndef __YZ_STACK_HPP__
+#define __YZ_STACK_HPP__
+
 #include <deque>
 #include <string>
 
@@ -99,3 +102,5 @@ namespace yz
 		return elems.size();
 	}
 }
+
+#endif /* __YZ_STACK_HPP__ */
