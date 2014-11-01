@@ -1,0 +1,4 @@
+函数对象
+包装类，类似ks_stdptr
+重载operator new
+_memcpy
