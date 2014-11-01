@@ -1,0 +1,6 @@
+CreateFile
+WriteFile
+CloseHandle
+wsprintf
+OutputDebugString
+写二进制文件（文件操作，调试）
