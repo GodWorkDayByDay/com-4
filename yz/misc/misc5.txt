@@ -1,0 +1,8 @@
+CreateFile
+WriteFile
+CloseHandle
+GetTempFileName
+GetTempPath
+GetFullPathName
+SetCurrentDirectory
+GetCurrentDirectory
