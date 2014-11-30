@@ -1,0 +1,282 @@
+Microsoft (R) COFF/PE Dumper Version 10.00.40219.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file stdafx.obj
+
+File Type: COFF OBJECT
+
+COFF SYMBOL TABLE
+000 00AB9D1B ABS    notype       Static       | @comp.id
+001 00000001 ABS    notype       Static       | @feat.00
+002 00000000 SECT1  notype       Static       | .drectve
+    Section length   D0, #relocs    0, #linenums    0, checksum        0
+    Relocation CRC 00000000
+005 00000000 SECT2  notype       Static       | .debug$S
+    Section length 8778, #relocs    4, #linenums    0, checksum        0
+    Relocation CRC 62B8A3CE
+008 00000000 SECT3  notype       Static       | .rdata
+    Section length    1, #relocs    0, #linenums    0, checksum        0, selection    2 (pick any)
+    Relocation CRC 00000000
+00B 00000000 SECT3  notype       External     | ?value@?$integral_constant@_N$0A@@tr1@std@@2_NB (public: static bool const std::tr1::integral_constant<bool,0>::value)
+00C 00000000 SECT4  notype       Static       | .rdata
+    Section length    1, #relocs    0, #linenums    0, checksum 77073096, selection    2 (pick any)
+    Relocation CRC 00000000
+00F 00000000 SECT4  notype       External     | ?value@?$integral_constant@_N$00@tr1@std@@2_NB (public: static bool const std::tr1::integral_constant<bool,1>::value)
+010 00000000 SECT5  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum        0, selection    2 (pick any)
+    Relocation CRC 00000000
+013 00000000 SECT5  notype       External     | ?value@?$integral_constant@I$0A@@tr1@std@@2IB (public: static unsigned int const std::tr1::integral_constant<unsigned int,0>::value)
+014 00000000 SECT6  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum B8BC6765, selection    2 (pick any)
+    Relocation CRC 00000000
+017 00000000 SECT6  notype       External     | ?_Rank@?$_Arithmetic_traits@_N@std@@2HB (public: static int const std::_Arithmetic_traits<bool>::_Rank)
+018 00000000 SECT7  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum AA09C88B, selection    2 (pick any)
+    Relocation CRC 00000000
+01B 00000000 SECT7  notype       External     | ?_Rank@?$_Arithmetic_traits@D@std@@2HB (public: static int const std::_Arithmetic_traits<char>::_Rank)
+01C 00000000 SECT8  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum AA09C88B, selection    2 (pick any)
+    Relocation CRC 00000000
+01F 00000000 SECT8  notype       External     | ?_Rank@?$_Arithmetic_traits@C@std@@2HB (public: static int const std::_Arithmetic_traits<signed char>::_Rank)
+020 00000000 SECT9  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum AA09C88B, selection    2 (pick any)
+    Relocation CRC 00000000
+023 00000000 SECT9  notype       External     | ?_Rank@?$_Arithmetic_traits@E@std@@2HB (public: static int const std::_Arithmetic_traits<unsigned char>::_Rank)
+024 00000000 SECTA  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 12B5AFEE, selection    2 (pick any)
+    Relocation CRC 00000000
+027 00000000 SECTA  notype       External     | ?_Rank@?$_Arithmetic_traits@F@std@@2HB (public: static int const std::_Arithmetic_traits<short>::_Rank)
+028 00000000 SECTB  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 12B5AFEE, selection    2 (pick any)
+    Relocation CRC 00000000
+02B 00000000 SECTB  notype       External     | ?_Rank@?$_Arithmetic_traits@G@std@@2HB (public: static int const std::_Arithmetic_traits<unsigned short>::_Rank)
+02C 00000000 SECTC  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 8F629757, selection    2 (pick any)
+    Relocation CRC 00000000
+02F 00000000 SECTC  notype       External     | ?_Rank@?$_Arithmetic_traits@H@std@@2HB (public: static int const std::_Arithmetic_traits<int>::_Rank)
+030 00000000 SECTD  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 8F629757, selection    2 (pick any)
+    Relocation CRC 00000000
+033 00000000 SECTD  notype       External     | ?_Rank@?$_Arithmetic_traits@I@std@@2HB (public: static int const std::_Arithmetic_traits<unsigned int>::_Rank)
+034 00000000 SECTE  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 37DEF032, selection    2 (pick any)
+    Relocation CRC 00000000
+037 00000000 SECTE  notype       External     | ?_Rank@?$_Arithmetic_traits@J@std@@2HB (public: static int const std::_Arithmetic_traits<long>::_Rank)
+038 00000000 SECTF  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 37DEF032, selection    2 (pick any)
+    Relocation CRC 00000000
+03B 00000000 SECTF  notype       External     | ?_Rank@?$_Arithmetic_traits@K@std@@2HB (public: static int const std::_Arithmetic_traits<unsigned long>::_Rank)
+03C 00000000 SECT10 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 256B5FDC, selection    2 (pick any)
+    Relocation CRC 00000000
+03F 00000000 SECT10 notype       External     | ?_Rank@?$_Arithmetic_traits@_J@std@@2HB (public: static int const std::_Arithmetic_traits<__int64>::_Rank)
+040 00000000 SECT11 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 256B5FDC, selection    2 (pick any)
+    Relocation CRC 00000000
+043 00000000 SECT11 notype       External     | ?_Rank@?$_Arithmetic_traits@_K@std@@2HB (public: static int const std::_Arithmetic_traits<unsigned __int64>::_Rank)
+044 00000000 SECT12 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 9DD738B9, selection    2 (pick any)
+    Relocation CRC 00000000
+047 00000000 SECT12 notype       External     | ?_Rank@?$_Arithmetic_traits@M@std@@2HB (public: static int const std::_Arithmetic_traits<float>::_Rank)
+048 00000000 SECT13 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum C5B428EF, selection    2 (pick any)
+    Relocation CRC 00000000
+04B 00000000 SECT13 notype       External     | ?_Rank@?$_Arithmetic_traits@N@std@@2HB (public: static int const std::_Arithmetic_traits<double>::_Rank)
+04C 00000000 SECT14 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 7D084F8A, selection    2 (pick any)
+    Relocation CRC 00000000
+04F 00000000 SECT14 notype       External     | ?_Rank@?$_Arithmetic_traits@O@std@@2HB (public: static int const std::_Arithmetic_traits<long double>::_Rank)
+050 00000000 SECT15 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum B8BC6765, selection    2 (pick any)
+    Relocation CRC 00000000
+053 00000000 SECT15 notype       External     | ?collate@?$_Locbase@H@std@@2HB (public: static int const std::_Locbase<int>::collate)
+054 00000000 SECT16 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum AA09C88B, selection    2 (pick any)
+    Relocation CRC 00000000
+057 00000000 SECT16 notype       External     | ?ctype@?$_Locbase@H@std@@2HB (public: static int const std::_Locbase<int>::ctype)
+058 00000000 SECT17 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 8F629757, selection    2 (pick any)
+    Relocation CRC 00000000
+05B 00000000 SECT17 notype       External     | ?monetary@?$_Locbase@H@std@@2HB (public: static int const std::_Locbase<int>::monetary)
+05C 00000000 SECT18 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum C5B428EF, selection    2 (pick any)
+    Relocation CRC 00000000
+05F 00000000 SECT18 notype       External     | ?numeric@?$_Locbase@H@std@@2HB (public: static int const std::_Locbase<int>::numeric)
+060 00000000 SECT19 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 5019579F, selection    2 (pick any)
+    Relocation CRC 00000000
+063 00000000 SECT19 notype       External     | ?time@?$_Locbase@H@std@@2HB (public: static int const std::_Locbase<int>::time)
+064 00000000 SECT1A notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum A032AF3E, selection    2 (pick any)
+    Relocation CRC 00000000
+067 00000000 SECT1A notype       External     | ?messages@?$_Locbase@H@std@@2HB (public: static int const std::_Locbase<int>::messages)
+068 00000000 SECT1B notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum A848E8F7, selection    2 (pick any)
+    Relocation CRC 00000000
+06B 00000000 SECT1B notype       External     | ?all@?$_Locbase@H@std@@2HB (public: static int const std::_Locbase<int>::all)
+06C 00000000 SECT1C notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum        0, selection    2 (pick any)
+    Relocation CRC 00000000
+06F 00000000 SECT1C notype       External     | ?none@?$_Locbase@H@std@@2HB (public: static int const std::_Locbase<int>::none)
+070 00000000 SECT1D notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum B8BC6765, selection    2 (pick any)
+    Relocation CRC 00000000
+073 00000000 SECT1D notype       External     | ?skipws@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::skipws)
+074 00000000 SECT1E notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum AA09C88B, selection    2 (pick any)
+    Relocation CRC 00000000
+077 00000000 SECT1E notype       External     | ?unitbuf@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::unitbuf)
+078 00000000 SECT1F notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 8F629757, selection    2 (pick any)
+    Relocation CRC 00000000
+07B 00000000 SECT1F notype       External     | ?uppercase@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::uppercase)
+07C 00000000 SECT20 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum C5B428EF, selection    2 (pick any)
+    Relocation CRC 00000000
+07F 00000000 SECT20 notype       External     | ?showbase@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::showbase)
+080 00000000 SECT21 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 5019579F, selection    2 (pick any)
+    Relocation CRC 00000000
+083 00000000 SECT21 notype       External     | ?showpoint@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::showpoint)
+084 00000000 SECT22 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum A032AF3E, selection    2 (pick any)
+    Relocation CRC 00000000
+087 00000000 SECT22 notype       External     | ?showpos@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::showpos)
+088 00000000 SECT23 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 9B14583D, selection    2 (pick any)
+    Relocation CRC 00000000
+08B 00000000 SECT23 notype       External     | ?left@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::left)
+08C 00000000 SECT24 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum ED59B63B, selection    2 (pick any)
+    Relocation CRC 00000000
+08F 00000000 SECT24 notype       External     | ?right@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::right)
+090 00000000 SECT25 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum  1C26A37, selection    2 (pick any)
+    Relocation CRC 00000000
+093 00000000 SECT25 notype       External     | ?internal@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::internal)
+094 00000000 SECT26 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum  384D46E, selection    2 (pick any)
+    Relocation CRC 00000000
+097 00000000 SECT26 notype       External     | ?dec@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::dec)
+098 00000000 SECT27 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum  709A8DC, selection    2 (pick any)
+    Relocation CRC 00000000
+09B 00000000 SECT27 notype       External     | ?oct@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::oct)
+09C 00000000 SECT28 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum  E1351B8, selection    2 (pick any)
+    Relocation CRC 00000000
+09F 00000000 SECT28 notype       External     | ?hex@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::hex)
+0A0 00000000 SECT29 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 1C26A370, selection    2 (pick any)
+    Relocation CRC 00000000
+0A3 00000000 SECT29 notype       External     | ?scientific@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::scientific)
+0A4 00000000 SECT2A notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 384D46E0, selection    2 (pick any)
+    Relocation CRC 00000000
+0A7 00000000 SECT2A notype       External     | ?fixed@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::fixed)
+0A8 00000000 SECT2B notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 246BE590, selection    2 (pick any)
+    Relocation CRC 00000000
+0AB 00000000 SECT2B notype       External     | ?hexfloat@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::hexfloat)
+0AC 00000000 SECT2C notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 709A8DC0, selection    2 (pick any)
+    Relocation CRC 00000000
+0AF 00000000 SECT2C notype       External     | ?boolalpha@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::boolalpha)
+0B0 00000000 SECT2D notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum E1351B80, selection    2 (pick any)
+    Relocation CRC 00000000
+0B3 00000000 SECT2D notype       External     | ?_Stdio@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::_Stdio)
+0B4 00000000 SECT2E notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 778F8431, selection    2 (pick any)
+    Relocation CRC 00000000
+0B7 00000000 SECT2E notype       External     | ?adjustfield@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::adjustfield)
+0B8 00000000 SECT2F notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum  A9E2D0A, selection    2 (pick any)
+    Relocation CRC 00000000
+0BB 00000000 SECT2F notype       External     | ?basefield@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::basefield)
+0BC 00000000 SECT30 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 246BE590, selection    2 (pick any)
+    Relocation CRC 00000000
+0BF 00000000 SECT30 notype       External     | ?floatfield@?$_Iosb@H@std@@2W4_Fmtflags@12@B (public: static enum std::_Iosb<int>::_Fmtflags const std::_Iosb<int>::floatfield)
+0C0 00000000 SECT31 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum        0, selection    2 (pick any)
+    Relocation CRC 00000000
+0C3 00000000 SECT31 notype       External     | ?goodbit@?$_Iosb@H@std@@2W4_Iostate@12@B (public: static enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::goodbit)
+0C4 00000000 SECT32 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum B8BC6765, selection    2 (pick any)
+    Relocation CRC 00000000
+0C7 00000000 SECT32 notype       External     | ?eofbit@?$_Iosb@H@std@@2W4_Iostate@12@B (public: static enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::eofbit)
+0C8 00000000 SECT33 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum AA09C88B, selection    2 (pick any)
+    Relocation CRC 00000000
+0CB 00000000 SECT33 notype       External     | ?failbit@?$_Iosb@H@std@@2W4_Iostate@12@B (public: static enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::failbit)
+0CC 00000000 SECT34 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 8F629757, selection    2 (pick any)
+    Relocation CRC 00000000
+0CF 00000000 SECT34 notype       External     | ?badbit@?$_Iosb@H@std@@2W4_Iostate@12@B (public: static enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::badbit)
+0D0 00000000 SECT35 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 5019579F, selection    2 (pick any)
+    Relocation CRC 00000000
+0D3 00000000 SECT35 notype       External     | ?_Hardfail@?$_Iosb@H@std@@2W4_Iostate@12@B (public: static enum std::_Iosb<int>::_Iostate const std::_Iosb<int>::_Hardfail)
+0D4 00000000 SECT36 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum B8BC6765, selection    2 (pick any)
+    Relocation CRC 00000000
+0D7 00000000 SECT36 notype       External     | ?in@?$_Iosb@H@std@@2W4_Openmode@12@B (public: static enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::in)
+0D8 00000000 SECT37 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum AA09C88B, selection    2 (pick any)
+    Relocation CRC 00000000
+0DB 00000000 SECT37 notype       External     | ?out@?$_Iosb@H@std@@2W4_Openmode@12@B (public: static enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::out)
+0DC 00000000 SECT38 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 8F629757, selection    2 (pick any)
+    Relocation CRC 00000000
+0DF 00000000 SECT38 notype       External     | ?ate@?$_Iosb@H@std@@2W4_Openmode@12@B (public: static enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::ate)
+0E0 00000000 SECT39 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum C5B428EF, selection    2 (pick any)
+    Relocation CRC 00000000
+0E3 00000000 SECT39 notype       External     | ?app@?$_Iosb@H@std@@2W4_Openmode@12@B (public: static enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::app)
+0E4 00000000 SECT3A notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 5019579F, selection    2 (pick any)
+    Relocation CRC 00000000
+0E7 00000000 SECT3A notype       External     | ?trunc@?$_Iosb@H@std@@2W4_Openmode@12@B (public: static enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::trunc)
+0E8 00000000 SECT3B notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 9B14583D, selection    2 (pick any)
+    Relocation CRC 00000000
+0EB 00000000 SECT3B notype       External     | ?_Nocreate@?$_Iosb@H@std@@2W4_Openmode@12@B (public: static enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::_Nocreate)
+0EC 00000000 SECT3C notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum ED59B63B, selection    2 (pick any)
+    Relocation CRC 00000000
+0EF 00000000 SECT3C notype       External     | ?_Noreplace@?$_Iosb@H@std@@2W4_Openmode@12@B (public: static enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::_Noreplace)
+0F0 00000000 SECT3D notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum A032AF3E, selection    2 (pick any)
+    Relocation CRC 00000000
+0F3 00000000 SECT3D notype       External     | ?binary@?$_Iosb@H@std@@2W4_Openmode@12@B (public: static enum std::_Iosb<int>::_Openmode const std::_Iosb<int>::binary)
+0F4 00000000 SECT3E notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum        0, selection    2 (pick any)
+    Relocation CRC 00000000
+0F7 00000000 SECT3E notype       External     | ?beg@?$_Iosb@H@std@@2W4_Seekdir@12@B (public: static enum std::_Iosb<int>::_Seekdir const std::_Iosb<int>::beg)
+0F8 00000000 SECT3F notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum B8BC6765, selection    2 (pick any)
+    Relocation CRC 00000000
+0FB 00000000 SECT3F notype       External     | ?cur@?$_Iosb@H@std@@2W4_Seekdir@12@B (public: static enum std::_Iosb<int>::_Seekdir const std::_Iosb<int>::cur)
+0FC 00000000 SECT40 notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum AA09C88B, selection    2 (pick any)
+    Relocation CRC 00000000
+0FF 00000000 SECT40 notype       External     | ?end@?$_Iosb@H@std@@2W4_Seekdir@12@B (public: static enum std::_Iosb<int>::_Seekdir const std::_Iosb<int>::end)
+100 00000000 SECT41 notype       Static       | .rdata
+    Section length   20, #relocs    0, #linenums    0, checksum 8AC73174
+    Relocation CRC 00000000
+103 00000000 SECT41 notype       External     | _IID_IDictionary
+104 00000010 SECT41 notype       External     | _CLSID_ZDictionary
+105 00000000 SECT42 notype       Static       | .debug$T
+    Section length   54, #relocs    0, #linenums    0, checksum        0
+    Relocation CRC 00000000
+
+String Table Size = 0x9B4 bytes
+
+  Summary
+
+        8778 .debug$S
+          54 .debug$T
+          D0 .drectve
+         112 .rdata

@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZDictionary", "ZDictionary\ZDictionary.vcxproj", "{FB18F44B-C12C-4DC1-9710-71D474F09477}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "client", "client\client.vcxproj", "{C32F3BDB-7DB6-4A64-8E40-24D2858C87B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{FB18F44B-C12C-4DC1-9710-71D474F09477}.Debug|Win32.Build.0 = Debug|Win32
 		{FB18F44B-C12C-4DC1-9710-71D474F09477}.Release|Win32.ActiveCfg = Release|Win32
 		{FB18F44B-C12C-4DC1-9710-71D474F09477}.Release|Win32.Build.0 = Release|Win32
+		{C32F3BDB-7DB6-4A64-8E40-24D2858C87B2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C32F3BDB-7DB6-4A64-8E40-24D2858C87B2}.Debug|Win32.Build.0 = Debug|Win32
+		{C32F3BDB-7DB6-4A64-8E40-24D2858C87B2}.Release|Win32.ActiveCfg = Release|Win32
+		{C32F3BDB-7DB6-4A64-8E40-24D2858C87B2}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

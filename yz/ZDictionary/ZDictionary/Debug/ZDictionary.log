@@ -1,23 +1,47 @@
-﻿Build started 2014/11/29 8:40:47.
-     1>Project "C:\Users\yz\Documents\Visual Studio 2010\Projects\ZDictionary\ZDictionary\ZDictionary.vcxproj" on node 2 (build target(s)).
+﻿Build started 2014/11/30 18:51:57.
+     1>Project "E:\yz\com\yz\ZDictionary\ZDictionary\ZDictionary.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Debug\ZDictionary.unsuccessfulbuild".
+         Creating "Debug\ZDictionary.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dict.cpp
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dict.cpp dictfact.cpp dictionary.cpp Registry.cpp stdafx.cpp
+         stdafx.cpp
+         Registry.cpp
+     1>e:\yz\com\yz\zdictionary\zdictionary\registry.cpp(59): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\yz\com\yz\zdictionary\zdictionary\registry.cpp(60): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\yz\com\yz\zdictionary\zdictionary\registry.cpp(105): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\yz\com\yz\zdictionary\zdictionary\registry.cpp(106): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\yz\com\yz\zdictionary\zdictionary\registry.cpp(139): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdlib.h(533) : see declaration of 'wcstombs'
+     1>e:\yz\com\yz\zdictionary\zdictionary\registry.cpp(196): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>e:\yz\com\yz\zdictionary\zdictionary\registry.cpp(201): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+     1>e:\yz\com\yz\zdictionary\zdictionary\registry.cpp(202): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : see declaration of 'strcat'
+         dictionary.cpp
+         dictfact.cpp
          dict.cpp
+         Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\yz\Documents\Visual Studio 2010\Projects\ZDictionary\Debug\ZDictionary.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"dict.def" /MANIFEST /ManifestFile:"Debug\ZDictionary.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\yz\Documents\Visual Studio 2010\Projects\ZDictionary\Debug\ZDictionary.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\yz\Documents\Visual Studio 2010\Projects\ZDictionary\Debug\ZDictionary.lib" /MACHINE:X86 /DLL Debug\dict.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\yz\com\yz\ZDictionary\Debug\ZDictionary.dll" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"dict.def" /MANIFEST /ManifestFile:"Debug\ZDictionary.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\yz\com\yz\ZDictionary\Debug\ZDictionary.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\yz\com\yz\ZDictionary\Debug\ZDictionary.lib" /MACHINE:X86 /DLL Debug\dict.obj
          Debug\dictfact.obj
          Debug\dictionary.obj
-            Creating library C:\Users\yz\Documents\Visual Studio 2010\Projects\ZDictionary\Debug\ZDictionary.lib and object C:\Users\yz\Documents\Visual Studio 2010\Projects\ZDictionary\Debug\ZDictionary.exp
-         ZDictionary.vcxproj -> C:\Users\yz\Documents\Visual Studio 2010\Projects\ZDictionary\Debug\ZDictionary.dll
+         Debug\Registry.obj
+         Debug\stdafx.obj
+            Creating library E:\yz\com\yz\ZDictionary\Debug\ZDictionary.lib and object E:\yz\com\yz\ZDictionary\Debug\ZDictionary.exp
+         ZDictionary.vcxproj -> E:\yz\com\yz\ZDictionary\Debug\ZDictionary.dll
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\yz\Documents\Visual Studio 2010\Projects\ZDictionary\Debug\ZDictionary.dll;#2" /manifest Debug\ZDictionary.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\yz\com\yz\ZDictionary\Debug\ZDictionary.dll;#2" /manifest Debug\ZDictionary.dll.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "Debug\ZDictionary.unsuccessfulbuild".
          Touching "Debug\ZDictionary.lastbuildstate".
-     1>Done Building Project "C:\Users\yz\Documents\Visual Studio 2010\Projects\ZDictionary\ZDictionary\ZDictionary.vcxproj" (build target(s)).
+     1>Done Building Project "E:\yz\com\yz\ZDictionary\ZDictionary\ZDictionary.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.28
+Time Elapsed 00:00:03.05
