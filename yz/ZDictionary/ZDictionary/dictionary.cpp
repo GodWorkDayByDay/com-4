@@ -10,7 +10,7 @@ ZDictionary::ZDictionary()
 {
 	++g_DictionaryNumber;
 
-	m_ref = 1;
+	m_ref = 0;
 }
 
 ZDictionary::~ZDictionary()

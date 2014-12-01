@@ -33,14 +33,12 @@ int main()
 	if (FAILED(hr))
 	{
 		pUnk->Release();
-		pUnk->Release();
 		return -1;
 	}
 
 	pDict->Initialize();
 
 	pDict->Release();
-	pUnk->Release();
 	pUnk->Release();
 
 	CoUninitialize();
