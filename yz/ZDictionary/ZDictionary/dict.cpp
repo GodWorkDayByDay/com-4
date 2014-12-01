@@ -26,6 +26,7 @@ extern "C" HRESULT __stdcall DllGetClassObject(const CLSID& rclsid, const IID& r
 			return E_OUTOFMEMORY;
 
 		HRESULT hr = pDictFact->QueryInterface(IID_IClassFactory, ppv);
+		((IUnknown*)(*ppv))->Release();
 		return hr;
 	}
 	else
