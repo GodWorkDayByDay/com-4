@@ -1,0 +1,10 @@
+GetSystemDirectory
+GetWindowsDirectory
+GetCurrentDirectory
+SetCurrentDirectory
+GetCurrentDirectory
+GetTempPath
+GetTempFileName
+GetFullPathName
+
+just test.
