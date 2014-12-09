@@ -1,4 +1,5 @@
 #include "windows.h"
+#include <assert.h>
 
 #include "zstream.h"
 
@@ -22,6 +23,9 @@ STDMETHODIMP ZStream::Seek(LARGE_INTEGER dlibMove, DWORD dwOrigin, ULARGE_INTEGE
 
 STDMETHODIMP ZStream::SetSize(ULARGE_INTEGER libNewSize)
 {
+	assert(libNewSize.HighPart == 0);
+	FlushFileBuffers(m_hFile);
+	SetFilePointer(m_hFile, libNewSize.LowPart, NULL, FILE_BEGIN);
 
 	return S_OK;
 }
@@ -78,4 +82,11 @@ HRESULT ZStream::Init(char *name)
 void ZStream::Close()
 {
 	CloseHandle(m_hFile);
+}
+
+HRESULT CreateZStream(ZStream **ppv)
+{
+	*ppv = new ZStream;
+
+	return S_OK;
 }
