@@ -69,13 +69,22 @@ template <typename T>
 class z_stdptr
 {
 public:
-	z_stdptr() { m_ptr = NULL; }
+	z_stdptr()
+	{
+		m_ptr = NULL;
+	}
 
 	z_stdptr(T* p)
 	{
 		m_ptr = p;
 		if (m_ptr)
 			m_ptr->AddRef();
+	}
+
+	z_stdptr(int _nil)
+	{
+		assert(NULL == _nil);
+		m_ptr = NULL;
 	}
 
 	z_stdptr(const z_stdptr<T>& zp)
@@ -91,8 +100,24 @@ public:
 			m_ptr->Release();
 	}
 
+	void attach(T* p)
+	{
+		if (m_ptr)
+			m_ptr->Release();
+		m_ptr = p;
+	}
+
+	T* detach();
+	{
+		T* _tmp = m_ptr;
+		m_ptr = NULL;
+		
+		return _tmp;
+	}
+
 	T* operator=(T* p)
 	{
+		// notice self-copy
 		if (p)
 			p->AddRef();
 		if (m_ptr)
@@ -103,7 +128,7 @@ public:
 
 	T* operator=(int _nil)
 	{
-		assert(_nil == NULL);
+		assert(NULL == _nil);
 		if (m_ptr)
 		{
 			m_ptr = Release();
@@ -120,6 +145,17 @@ public:
 			m_ptr->Release();
 
 		return m_ptr = zp.m_ptr;
+	}
+
+	template <class Type>
+	T* operator=(const z_stdptr<Type>& zp)
+	{
+		if (zp->m_ptr)
+			zp->AddRef();
+		if (m_ptr)
+			m_ptr->Release();
+
+		return m_ptr = zp->m_ptr;
 	}
 
 	ZNonAddRefReleaseObj<T>* operator->()
@@ -148,7 +184,22 @@ public:
 		return m_ptr == p;
 	}
 
+	bool operator!=(T* p)
+	{
+		return m_ptr != p;
+	}
 
+	bool operator==(int _nil)
+	{
+		assert(NULL == _nil);
+		return NULL == m_ptr;
+	}
+
+	bool operator!=(int _nil)
+	{
+		assert(NULL == _nil)
+			return NULL == m_ptr;
+	}
 
 private:
 	T *m_ptr;
