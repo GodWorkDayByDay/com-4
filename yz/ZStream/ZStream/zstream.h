@@ -9,6 +9,14 @@ public:
 	static STDMETHODIMP_(LONG) Decrement(PLONG pl) { return InterlockedDecrement(pl); }
 };
 
+template <typename I>
+class ZNonAddRefReleaseObj : public I
+{
+private:
+	HRESULT STDMETHODCALLTYPE AddRef();
+	HRESULT STDMETHODCALLTYPE Release();
+};
+
 template <typename T, typename ThreadModule = ZThreadModule>
 class ZUnknwon
 {
@@ -83,9 +91,40 @@ public:
 			m_ptr->Release();
 	}
 
-	T* operator->()
+	T* operator=(T* p)
 	{
-		return m_ptr;
+		if (p)
+			p->AddRef();
+		if (m_ptr)
+			m_ptr->Release();
+
+		return m_ptr = p;
+	}
+
+	T* operator=(int _nil)
+	{
+		assert(_nil == NULL);
+		if (m_ptr)
+		{
+			m_ptr = Release();
+			m_ptr = NULL;
+		}
+		return NULL;
+	}
+
+	T* operator=(const z_stdptr<T>& zp)
+	{
+		if (zp)
+			zp.m_ptr->AddRef();
+		if (m_ptr)
+			m_ptr->Release();
+
+		return m_ptr = zp.m_ptr;
+	}
+
+	ZNonAddRefReleaseObj<T>* operator->()
+	{
+		return (ZNonAddRefReleaseObj<T>*)m_ptr;
 	}
 
 	T** operator&()
@@ -103,6 +142,13 @@ public:
 	{
 		return *m_ptr;
 	}
+
+	bool operator==(T* p)
+	{
+		return m_ptr == p;
+	}
+
+
 
 private:
 	T *m_ptr;
