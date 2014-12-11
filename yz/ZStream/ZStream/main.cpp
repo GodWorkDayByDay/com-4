@@ -5,7 +5,7 @@
 int main()
 {
 	z_stdptr<IStream> spStream;
-	CreateZStream(&spStream, "b.txt");
+	CreateZStream(&spStream, "Debug/b.txt");
 
 
 	return 0;
