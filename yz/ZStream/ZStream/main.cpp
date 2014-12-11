@@ -4,11 +4,9 @@
 
 int main()
 {
-	z_stdptr<ZStream> spStream;
-	CreateZStream(&spStream);
+	z_stdptr<IStream> spStream;
+	CreateZStream(&spStream, "b.txt");
 
-	spStream->Init("a.txt");
-	spStream->Close();
 
 	return 0;
 }

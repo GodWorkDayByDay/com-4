@@ -18,7 +18,7 @@ private:
 };
 
 template <typename T, typename ThreadModule = ZThreadModule>
-class ZUnknwon
+class ZUnknwon : public T
 {
 public:
 	ZUnknwon()
@@ -34,9 +34,9 @@ public:
 public:
 	HRESULT STDMETHODCALLTYPE QueryInterface(REFIID iid, void** ppv)
 	{
-		if (iid == __uuid(T) || iid == IUnknown)
+		if (iid == __uuidof(T) || iid == IID_IUnknown)
 		{
-			(*ppv) = *this;
+			(*ppv) = this;
 			AddRef();
 			return S_OK;
 		}
@@ -44,12 +44,12 @@ public:
 			return E_NOINTERFACE;
 	}
 
-	UINT STDMETHODCALLTYPE AddRef()
+	ULONG STDMETHODCALLTYPE AddRef()
 	{
 		return ThreadModule::Increment(&m_ref);
 	}
 
-	UINT STDMETHODCALLTYPE Release()
+	ULONG STDMETHODCALLTYPE Release()
 	{
 		ULONG l = ThreadModule::Decrement(&m_ref);
 
@@ -107,7 +107,7 @@ public:
 		m_ptr = p;
 	}
 
-	T* detach();
+	T* detach()
 	{
 		T* _tmp = m_ptr;
 		m_ptr = NULL;
@@ -208,17 +208,28 @@ private:
 class ZStream : public ZUnknwon<IStream>
 {
 public:
+	ZStream(char *name)
+	{
+		Init(name);
+	}
+
+	~ZStream()
+	{
+		Close();
+	}
+	STDMETHODIMP Read(void *pv, ULONG cb, ULONG *pcbRead);
+	STDMETHODIMP Write(const void *pv, ULONG cb, ULONG *pcbWritten);
 	STDMETHODIMP Seek(LARGE_INTEGER dlibMove, DWORD dwOrigin, ULARGE_INTEGER *plibNewPosition);
 	STDMETHODIMP SetSize(ULARGE_INTEGER libNewSize);
 	STDMETHODIMP CopyTo(IStream *pstm, ULARGE_INTEGER cb, ULARGE_INTEGER *pcbRead, ULARGE_INTEGER *pcbWritten);
 	STDMETHODIMP Commit(DWORD grfCommitFlags);
 	STDMETHODIMP Revert(void);
-	STDMETHODIMP LockRegion(ULARGE_INTEGER libOffset, LARGE_INTEGER cb, DWORD dwLockType); 
+	STDMETHODIMP LockRegion(ULARGE_INTEGER libOffset, ULARGE_INTEGER cb, DWORD dwLockType); 
 	STDMETHODIMP UnlockRegion(ULARGE_INTEGER libOffset, ULARGE_INTEGER cb, DWORD dwLockType);
 	STDMETHODIMP Stat(STATSTG *pstatstg, DWORD grfStatFlag);
 	STDMETHODIMP Clone(IStream **ppstm);
 
-public:
+private:
 	HRESULT Init(char *name);
 	void Close();
 
@@ -226,7 +237,7 @@ private:
 	HANDLE m_hFile;
 };
 
-HRESULT CreateZStream(ZStream **ppv);
+HRESULT CreateZStream(IStream **ppv, char *name);
 
 #endif  /* __YZ_ZSTREAM_H__ */
 

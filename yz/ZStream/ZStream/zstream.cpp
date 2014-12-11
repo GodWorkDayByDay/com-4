@@ -3,6 +3,15 @@
 
 #include "zstream.h"
 
+STDMETHODIMP ZStream::Read(void *pv, ULONG cb, ULONG *pcbRead)
+{
+	return S_OK;
+}
+
+STDMETHODIMP ZStream::Write(const void *pv, ULONG cb, ULONG *pcbWritten)
+{
+	return S_OK;
+}
 
 STDMETHODIMP ZStream::Seek(LARGE_INTEGER dlibMove, DWORD dwOrigin, ULARGE_INTEGER *plibNewPosition)
 {
@@ -48,7 +57,7 @@ STDMETHODIMP ZStream::Revert(void)
 	return S_OK;
 }
 
-STDMETHODIMP ZStream::LockRegion(ULARGE_INTEGER libOffset, LARGE_INTEGER cb, DWORD dwLockType)
+STDMETHODIMP ZStream::LockRegion(ULARGE_INTEGER libOffset, ULARGE_INTEGER cb, DWORD dwLockType)
 {
 
 	return S_OK;
@@ -74,7 +83,7 @@ STDMETHODIMP ZStream::Clone(IStream **ppstm)
 
 HRESULT ZStream::Init(char *name)
 {
-	m_hFile = CreateFile(name, GENERIC_WRITE, FILE_SHARE_READ, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
+	m_hFile = CreateFile(name, GENERIC_WRITE, FILE_SHARE_WRITE | FILE_SHARE_READ, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
 
 	return S_OK;
 }
@@ -84,9 +93,9 @@ void ZStream::Close()
 	CloseHandle(m_hFile);
 }
 
-HRESULT CreateZStream(ZStream **ppv)
+HRESULT CreateZStream(IStream **ppv, char *name)
 {
-	*ppv = new ZStream;
+	*ppv = new ZStream(name);
 
 	return S_OK;
 }
